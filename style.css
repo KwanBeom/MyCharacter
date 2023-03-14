@@ -1,3 +1,6 @@
+body{
+    background-color: rgba(0, 255, 36, 0.2);
+}
 .tiger-box{
     position: absolute;
     transform: translate(-50%, -50%);
