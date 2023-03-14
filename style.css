@@ -126,6 +126,37 @@
     border-radius: 40px 40px 90px 90px;
     z-index: 2;
 }
+.beard{
+    display: flex;
+    position: relative;
+    top:25%;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.beard-left{
+    transform: translateX(-30px);
+}
+.beard-right{
+    transform: translateX(30px);
+
+}
+[class^="beard"] span{
+    width: 70px;
+    height: 9px;
+    display: block;
+    border-radius: 20px;
+    background-color: #000;
+    margin-bottom:20px;
+}
+.beard-left span:first-child,
+.beard-right span:last-child{
+    transform: rotate(15deg);
+}
+.beard-left span:last-child,
+.beard-right span:first-child{
+    transform: rotate(-15deg);
+}
 
 .mouth-wrap{
     background-color: #fff;
