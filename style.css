@@ -1,0 +1,153 @@
+.tiger-box{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top:50%;
+    left:50%;
+    width:340px;
+    height:330px;
+    background-color: #FF9A3E;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+}
+[class^="ear"]{
+    background-color: #FF9A3E;
+    width: 65px;
+    height:73px;
+    position: absolute;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 15px;
+}
+[class^="ear"] .inner-ear{
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+.ear-left{
+    left: 0;
+}
+.ear-right{
+    right:0;
+}
+
+.hair{
+    align-self: center;
+    width: 10px;
+    height:70px;
+    top:0;
+    background-color: #000;
+    border-radius: 10px;
+}
+
+.hair span{
+    display: block;
+    width: 70px;
+    height: 10px;
+    background-color: black;
+    border-radius: 10px;
+    margin: 7px 0 7px 0;
+    transform: translate(-30px);
+}
+
+.section-eye{
+    position: relative;
+}
+[class^="brow"]{
+    width: 75px;
+    height: 15px;
+    background-color: #000;
+    position: absolute;
+    top: 20px;
+    border-radius: 10px;
+}
+.brow-left{
+    left: 50px;
+    transform: rotate(20deg);
+}
+.brow-right{
+    right: 50px;
+    transform: rotate(-20deg);
+}
+
+[class^="eye"]{
+    width: 30px;
+    height: 30px;
+    background-color: #000;
+    border-radius: 50%;
+    position: absolute;
+    top:40px;
+}
+.eye-left{
+    left:25%;
+}
+.eye-right{
+    right:25%;
+}
+
+.inner-eye{
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top:10px;
+    left:0;
+    animation-name: pingpong;
+    animation-duration: .8s;
+    animation-delay: .2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes pingpong{
+    0%{
+        top:10px;
+        left: 20px;
+    }
+    100%{
+        top:12px;
+        left: 5px;
+        width:12px;
+        height: 12px;
+    }
+}
+
+.nose{
+    position: absolute;
+    align-self: center;
+    width: 90px;
+    height: 30px;
+    background-color: #000;
+    top:50%;
+    border-radius: 40px 40px 90px 90px;
+    z-index: 2;
+}
+
+.mouth-wrap{
+    background-color: #fff;
+    width: 250px;
+    height: 150px;
+    border-radius: 50%;
+    align-self: center;
+    position: absolute;
+    bottom:5px;
+    display: flex;
+    z-index: 1;
+    align-items: center;
+    flex-direction: column;
+}
+.mouth-line{
+    width: 5px;
+    height: 60px;
+    background-color: #000;
+}
+.mouth{
+    width: 100px;
+    height: 35px;
+    background-color: rgba(255, 0, 0, 0.8);
+    border-radius: 30px 30px 50% 50%;
+}
